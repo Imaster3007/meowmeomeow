@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ page_title }}</title>
+    
     <link rel="icon" href="https://cdn.discordapp.com/attachments/812654744594022441/1444275807932649594/cat.png?ex=692c1e29&is=692acca9&hm=f8af023b13709cea012bfece09c881cfcb0fc417e94a51fad1525ff9865967ad&" sizes="any">
     <style>
        html, body {
