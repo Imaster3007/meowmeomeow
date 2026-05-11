@@ -1,0 +1,259 @@
+/* Цветовая палитра */
+:root {
+  --leaf-green: #2D572C;         /* лиственно-зелёный */
+  --spring-green: #ECEABE;       /* весенне-зелёный */
+  --deep-olive: #142300;         /* глубокий оливково-зелёный */
+  --text-dark: #000000;          /* чёрный текст */
+}
+
+/* Основной фон и текст */
+body {
+  background: var(--spring-green);
+  color: var(--text-dark);
+  font-family: Arial, sans-serif;
+}
+
+/* Верхняя навигация */
+.navbar {
+  background: var(--leaf-green);
+  padding: 15px;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar a {
+  color: var(--spring-green);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+/* Telegram-кнопка */
+.tg-btn {
+  background: #0088cc;
+  margin-top: -5px;
+  padding: 5px 12px;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Сетка карточек */
+.grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Карточка контента */
+.card {
+  background: #ffffff;
+  padding: 15px;
+  border-radius: 10px;
+  width: 220px;
+  color: var(--text-dark);
+  box-shadow: 0 0 10px rgba(45, 87, 44, 0.2);
+}
+
+/* Изображения */
+.poster {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.bigposter {
+  width: 300px;
+  border-radius: 15px;
+}
+
+/* Кнопки действий */
+.btn {
+  display: block;
+  margin-top: 10px;
+  background: var(--deep-olive);
+  color: var(--spring-green);
+  padding: 8px;
+  text-align: center;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background 0.3s;
+
+  
+ 
+  
+}
+
+.btn:hover {
+  background: #1e3300;
+  color: #fff;
+}
+
+/* Кнопка избранного */
+.btn-fav {
+  background: #0088cc;
+  color: #fff;
+
+  
+}
+
+.btn-fav:hover {
+  background: #0066a3;
+}
+
+/* Отзывы */
+.review {
+  background: var(--leaf-green);
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 8px;
+  color: var(--spring-green);
+}
+
+/* Форма фильтрации */
+.filters {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.filters input,
+.filters select {
+  padding: 8px;
+  border-radius: 6px;
+  border: none;
+  background: #ffffff;
+  color: var(--text-dark);
+}
+
+.filters button {
+  padding: 8px 16px;
+  background: var(--deep-olive);
+  color: var(--spring-green);
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+.filters button:hover {
+  background: #1e3300;
+  color: #fff;
+}
+
+.pagination a, .pagination span {
+  padding: 4px 8px;
+  margin: 2px;
+  border: 1px solid #ccc;
+  text-decoration: none;
+}
+.pagination .active {
+  background: #333;
+  color: #fff;
+}
+
+.comment-form textarea {
+  width: 100%;
+  min-height: 80px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  resize: vertical;
+  font-size: 14px;
+}
+.comment-text.scrollable {
+  max-height: 220px;        
+  overflow-y: auto;
+}
+
+.comment-form select {
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.comment-form button {
+  background: #444;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.comment {
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
+
+.delete-btn {
+  color: #FF8243;
+  float: right;
+  text-decoration: none;
+}
+
+.comment-form {
+  background: #142300;
+  border-radius: 12px;
+  padding: 16px;
+  margin: 25px 0;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+}
+
+.comment-form textarea {
+  width: 100%;
+  min-height: 100px;
+  background: #1f1f1f;
+  color: #fff;
+  border-radius: 5px;
+  padding: 1px;
+  font-size: 15px;
+  resize: vertical;
+  outline: none;
+
+}
+
+.comment-form textarea::placeholder {
+  color: #aaa;
+}
+
+.comment-form button {
+  margin-top: 12px;
+  background: #2D572C;
+  color: #fff;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 25px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.comment-form button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+}
+
+
+
+.rating-panel label {
+
+  color: #fff;
+  display: flex;
+  
+}
+
+
+
+.rating-panel {
+  display: flex;
+  align-items: center;
+  
+  gap: 4px;
+}

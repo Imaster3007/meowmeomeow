@@ -1,0 +1,10 @@
+<h1>{{ movie.title }}</h1>
+<p>{{ movie.description }}</p>
+{% if current_user.is_authenticated %}
+  {% if is_favorite %}
+    <a href="{{ url_for('favorite', movie_id=movie.id) }}">Удалить из избранного</a>
+  {% else %}
+    <a href="{{ url_for('favorite', movie_id=movie.id) }}">Добавить в избранное</a>
+  {% endif %}
+{% endif %}
+<a href="{{ url_for('index') }}">Назад к списку</a>
