@@ -1,12 +1,13 @@
 
+
 <html lang="ru">
 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>meow</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
             background-color: #f4f4f4;
             color: #333;
         }
@@ -58,9 +59,29 @@
             justify-content: center;
             align-items: center;
 	    cursor: pointer;
-            animation: bounce 2s ease-in-out infinite;    
+            animation: bounce 2s ease-in-out infinite; 
+   
         }
         .jumping-cat-container img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+
+        }
+	.mee-container {
+	    position: fixed; 
+            bottom: 500px;    
+            left: 120;   
+          
+            margin: 20px auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+	    perspective: 1000px; 
+            animation: rotateY 2s ease-in-out infinite;    
+        }
+        .mee-container img {
             display: block;
             width: 100%;
             height: 100%;
@@ -80,11 +101,9 @@
                 transform: translateY(-20px);
             }
             80% {
-                transform: translateY(-40px); 
-            }
+                transform: translateY(-40px); }
             100% {
-                transform: translateY(0); 
-            }
+                transform: translateY(0); }
         }
         @keyframes fadeOut {
             0% {
@@ -95,6 +114,23 @@
             }
 	    100% {
                 opacity: 0.8;
+            }
+        }
+ @keyframes rotateY {
+            0% {
+                transform: rotateY(0deg); 
+		transform: translateY(0); 
+transform: rotate(0deg);
+            }
+            50% {
+                transform: rotateY(180deg);
+		transform: translateY(-60px); 
+		transform: rotate(30deg);
+            }
+            100% {
+                transform: rotateY(360deg); 
+		transform: translateY(0);
+transform: rotate(0deg);
             }
         }
     </style>
@@ -128,6 +164,13 @@
  <div class="jumping-cat-container">
         <img src="https://sun9-18.userapi.com/s/v1/ig2/w-fKxNcTVa7hyf8GfQ7ti2I00U6UhV5wx4wk4hSBVd2a2nfiYePp4uaISWFp2bEoE2H1MeQlJbDUwiy0UsNCQ-02.jpg?quality=95&crop=0,13,482,724&as=32x48,48x72,72x108,108x162,160x240,240x360,360x541,480x721,482x724&from=bu&u=Ev5dBmpkwCLwCUqXxEYo4NuiW_nlwQAzfrBA1rvISks&cs=482x0" alt="кот">
     </div> </a>
+
+ <div class="mee-container">
+        <img src="https://cdn.discordapp.com/attachments/997323901124218932/1503339207496568942/Untitled-2.png?ex=6a02fd3d&is=6a01abbd&hm=7c177b5522e6149b612ceaf354e419c48aee5579969b29dd4029b8ac9afd50e6" alt=":3">
+    </div>
+
+
+
    <script>
   function getRandomInt(min, max) {
             min = Math.ceil(min); 
