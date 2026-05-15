@@ -166,7 +166,7 @@ transform: rotate(0deg);
     </div> </a>
 
  <div class="mee-container">
-        <img src="https://cdn.discordapp.com/attachments/997323901124218932/1503339207496568942/Untitled-2.png?ex=6a02fd3d&is=6a01abbd&hm=7c177b5522e6149b612ceaf354e419c48aee5579969b29dd4029b8ac9afd50e6" alt=":3">
+        <img src="Untitled-2.png" alt=":3">
     </div>
 
 
