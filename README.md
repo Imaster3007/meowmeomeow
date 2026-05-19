@@ -10,7 +10,145 @@
             background-color: #f4f4f4;
             color: #333;
         }
- 	
+
+	.comments {
+            bottom: 0;
+            left: 0;
+            right: 0;
+            color: black;
+            z-index: 10000;
+        }
+        
+
+        .comments-box {
+	    background:rgba(0, 132, 255, 0.20);
+            padding: 10px;
+            height: 100px;
+            overflow-y: auto;
+	    
+	    
+        }
+        
+        .comment-item {   
+            font-size: 14px;
+        }
+        .comments input {
+            width: 80%;
+            padding: 8px;
+    
+        }
+        .comments button {
+            background: #0400ff;
+            color: white;
+            cursor: pointer;
+	    opacity: 0.8;
+        }
+        
+      
+	.moving-wall {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 200%;
+            height: 50vh;
+            transform: rotate(-10deg);
+            z-index: -999;
+            pointer-events: none;
+            white-space: nowrap;
+            overflow: hidden;
+
+            display: flex;
+		opacity: 0;
+
+        }
+        
+        .moving-wall span {
+            font-size: 80px;
+            color: red;
+            text-transform: uppercase;
+        }
+
+	.wall-1 {
+            animation: slideDiagonal 8s linear infinite;
+            animation-delay: 11s;
+            
+        }
+	.wall-2 {
+            animation: slideDiagonal 8s linear infinite;
+            animation-delay: 11.5s;
+        }
+	.wall-3 {
+            animation: slideDiagonal 8s linear infinite;
+            animation-delay: 12s;
+        }
+	.wall-4 {
+            animation: slideDiagonal 8s linear infinite;
+            animation-delay: 12.5s;
+        }
+	.wall-5 {
+            animation: slideDiagonal 8s linear infinite;
+            animation-delay: 13s;
+        }
+	.wall-6 {
+            animation: slideDiagonal 8s linear infinite;
+            animation-delay: 13.5s;
+        }
+	.wall-7 {
+            animation: slideDiagonal 8s linear infinite;
+            animation-delay: 14s;
+        }
+	.wall-8 {
+            animation: slideDiagonal 8s linear infinite;
+            animation-delay: 14.5s;
+        }
+	.wall-9 {
+            animation: slideDiagonal 8s linear infinite;
+            animation-delay: 15s;
+        }
+	.wall-10 {
+            animation: slideDiagonal 8s linear infinite;
+            animation-delay: 15.5s;
+        }
+	.wall-11 {
+            animation: slideDiagonal 8s linear infinite;
+            animation-delay: 16s;
+        }
+	.wall-12 {
+            animation: slideDiagonal 8s linear infinite;
+            animation-delay: 16.5s;
+        }
+	.wall-13 {
+            animation: slideDiagonal 8s linear infinite;
+            animation-delay: 17s;
+        }
+	.wall-14 {
+            animation: slideDiagonal 8s linear infinite;
+            animation-delay: 17.5s;
+        }
+	.wall-15 {
+            animation: slideDiagonal 8s linear infinite;
+            animation-delay: 18s;
+        }
+	.wall-16 {
+            animation: slideDiagonal 8s linear infinite;
+            animation-delay: 18.5s;
+        }
+
+        
+        @keyframes slideDiagonal {
+            0% {
+		opacity: 1;
+                transform: translateX(-50%) translateY(-60%) rotate(-10deg);
+            }
+		
+            100% {
+		opacity: 1;
+                transform: translateX(0%) translateY(200%) rotate(-10deg);
+            }
+        }
+        
+
+
         .cat-image-container {
             width: 400px;
             height: 300px; 
@@ -49,7 +187,7 @@
         }
 	.jumping-cat-container {
 	    position: fixed; 
-            bottom: 20px;    
+            bottom: 200px;    
             right: 20px;   
             width: 300px;
             height: 200px;
@@ -137,6 +275,9 @@ transform: rotate(0deg);
 
 <body>
 
+
+
+
 <h1>КОТЫ</h1>
 <div class="background-layer">
 </div>
@@ -149,9 +290,26 @@ transform: rotate(0deg);
  </div>
 <div class="cat-image-container">
 <img src="https://sun9-50.userapi.com/s/v1/ig2/-pLKA5-s0xL2XzPRPWbSjqj_Ze3kAwqoZx8tHpCyrCoH-VTtBNjgAL4WkjNVXC37WiBej3hkdyAF6GosrO1Jo-v6.jpg?quality=96&as=32x43,48x64,72x96,108x144,160x213,240x320,360x480,480x640,540x720,640x853,720x960,900x1200&from=bu&u=5RXj0ZEjj-IqucFrn7AjV11pFnhTUA4CuQtg6IoZkng&cs=900x0" alt="кот">
-</div><div class="cat-image-container">
+</div>
+
+<div class="cat-image-container">
+<img src="https://sun9-49.userapi.com/s/v1/ig2/XWVy0I3TvjuQamDOHU84tDWQz7vo6VfvWVqoGfeg2AxV2CKIvq79NhVkhMlzjtH8HQYsUp0_DWuOwc080gFkmRCB.jpg?quality=96&as=32x43,48x64,72x96,108x144,160x213,240x320,360x480,480x640,540x720,640x853,720x960,900x1200&from=bu&u=lZT0TFrWmF7jxTLGOnfAi2ABPSCs4sKLnFTXUd9fe6I&cs=900x0" alt="кот3">
+</div>
+
+<div class="cat-image-container">
+<img src="https://sun1-14.userapi.com/s/v1/ig2/qOVAPjWbf7PkBZ_fNSFOoAzMTroPSGIe4m26hTYLscnl7U1n02UsRHjMqP6R8DG3L2GQjanF-0C1kBkhWALQQlor.jpg?quality=96&as=32x43,48x64,72x96,108x144,160x213,240x320,360x480,480x640,540x720,640x853,720x960,768x1024&from=bu&cs=768x0" alt="кот">
+</div>
+
+<div class="cat-image-container">
+<img src="https://sun9-21.userapi.com/s/v1/ig2/XyaPw8r_vtloqPanb2dymD2OXLT-t701BALZ_TTegf0XWqsQvTaw8coQ2attcidfnR38PVtSRy9AE0Kta3S4sb1O.jpg?quality=96&as=32x43,48x64,72x96,108x144,160x213,240x320,360x480,480x640,540x720,640x853,720x960,1080x1440,1200x1600&from=bu&u=2PyyDl-5-LfXwVs3w-bFx0Dlen5wKULA2H4D-C6WHL8&cs=1200x0" alt="кот5">
+</div>
+
+<div class="cat-image-container">
 <img src="https://sun9-88.userapi.com/s/v1/ig2/BXW4YC40ZagC4A1SheuNy2drefCaJIxwTerfiMasqxjtkkQ93jdKpOr0naujDjDyELGREAsUgXROsxVMkn2N8euW.jpg?quality=96&as=32x27,48x40,72x60,108x90,160x133,240x200,360x300,480x400,540x450,640x533,720x600,960x800&from=bu&u=lGOYVzj0WrDxZA2bf_ggCUjay3f5aYFbJEJGX1jfppI&cs=960x0" alt="кот">
 </div>
+
+
+
 <div class="cat-image-container">
 <img src="" alt='кот'>
 </div>
@@ -169,6 +327,16 @@ transform: rotate(0deg);
     </div>
 
 
+<div id="walls-container"></div>
+
+<div class="comments">
+    <div class="comments-box" id="commentsBox">
+       
+    </div>
+    <input type="text" id="commentInput" placeholder="Текст">
+    <button onclick="addComment()">Отправить</button>
+</div>
+
 
    <script>
   function getRandomInt(min, max) {
@@ -179,9 +347,51 @@ transform: rotate(0deg);
         }
 
  const userLinkElement = document.getElementById('userLink');
-        userLinkElement.alt = getRandomInt(0, 1000000); 
+ id=getRandomInt(0, 1000000);
+ userLinkElement.alt =  id;
      
+   
+    function createWalls() {
+    for (let i = 0; i < 17; i++) {
+        const wallDiv = document.createElement('div');
+        wallDiv.className = `moving-wall wall-${i+1}`;
+	if (getRandomInt(0, 100) === 1) {
+        	wallDiv.innerHTML = `<span>НЕГР НЕГР НЕГР НЕГР НЕГР НЕГР НЕГР НЕГР НЕГР НЕГР НЕГР НЕГР НЕГР НЕГР НЕГР НЕГР НЕГР НЕГР</span>`; 
+   	 } else if (getRandomInt(0, 10) === 1) {
+        	 wallDiv.innerHTML = `<span>МRУ МRУ МRУ МRУ МRУ МRУ МRУ МRУ МRУ МRУ МRУ МRУ МRУ МRУ МRУ МRУ МRУ МRRRRR МRRRRRУ МRУМRУ МRУ МRУ МRУ МRУ</span>`; 
+    	} else {
+        	 wallDiv.innerHTML = `<span>МЯУ МЯУ МЯУ МЯУ МЯУ МЯУ МЯУ МЯУ МЯУ МЯУ МЯУ МЯУ МЯУ МЯУ МЯУ МЯУ МЯУ МЯУ МЯУ МЯУ МЯУ МЯУ МЯУ МЯУ МЯУ</span>`;
+    	}
+       
+        document.getElementById('walls-container').appendChild(wallDiv);
+    }
+}
 
+createWalls();
+
+
+function addComment() {
+        let input = document.getElementById('commentInput');
+        let text = input.value.trim();
+        
+        if (text === "") return;
+        
+        let commentsBox = document.getElementById('commentsBox');
+        let newComment = document.createElement('div');
+        newComment.className = 'comment-item';
+        newComment.innerHTML = 'meow'+id+': '+ text;
+        
+        commentsBox.appendChild(newComment);
+        input.value = '';
+        
+        commentsBox.scrollTop = commentsBox.scrollHeight;
+    }
+    
+    document.getElementById('commentInput').addEventListener('keypress', function(e) {
+        if (e.key === 'Enter') {
+            addComment();
+        }
+    });
 	
 </script>
 </body>
