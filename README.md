@@ -369,6 +369,21 @@ transform: rotate(0deg);
 
 createWalls();
 
+function loadComments() {
+        let saved = localStorage.getItem('comments');
+        if (saved) {
+            let comments = JSON.parse(saved);
+            let commentsBox = document.getElementById('commentsBox');
+            commentsBox.innerHTML = '';
+            
+            for (let i = 0; i < comments.length; i++) {
+                let commentDiv = document.createElement('div');
+                commentDiv.className = 'comment-item';
+                commentDiv.innerHTML = comments[i];
+                commentsBox.appendChild(commentDiv);
+            }
+        }
+    }
 
 function addComment() {
         let input = document.getElementById('commentInput');
@@ -385,13 +400,25 @@ function addComment() {
         input.value = '';
         
         commentsBox.scrollTop = commentsBox.scrollHeight;
+
+	 saveComments();
     }
-    
+    function saveComments() {
+        let comments = [];
+        let commentElements = document.querySelectorAll('#commentsBox .comment-item');
+        
+        for (let i = 0; i < commentElements.length; i++) {
+            comments.push(commentElements[i].innerHTML);
+        }
+        
+        localStorage.setItem('comments', JSON.stringify(comments));
+    }
     document.getElementById('commentInput').addEventListener('keypress', function(e) {
         if (e.key === 'Enter') {
             addComment();
         }
     });
+	loadComments();
 	
 </script>
 </body>
