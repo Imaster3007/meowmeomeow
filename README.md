@@ -202,7 +202,7 @@
     </div>
 	 
     
-    <h1>ты долистал до конца!!! :3</h1>
+    
     <a href="https://youtu.be/JVilaNmHPLY?si=pMp9tJG88p88_8Fo&t=21">
         <div class="jumping-cat-container">
             <img src="https://sun9-18.userapi.com/s/v1/ig2/w-fKxNcTVa7hyf8GfQ7ti2I00U6UhV5wx4wk4hSBVd2a2nfiYePp4uaISWFp2bEoE2H1MeQlJbDUwiy0UsNCQ-02.jpg?quality=95&crop=0,13,482,724&as=32x48,48x72,72x108,108x162,160x240,240x360,360x541,480x721,482x724&from=bu&u=Ev5dBmpkwCLwCUqXxEYo4NuiW_nlwQAzfrBA1rvISks&cs=482x0" alt="кот">
@@ -212,6 +212,7 @@
         <img src="Untitled-2.png" alt=":3">
     </div>
     <div id="walls-container"></div>
+    <h2>ты долистал до конца!!! :3</h2>
     <div class="comments">
         <div class="comments-box" id="commentsBox"></div>
         <input type="text" id="commentInput" placeholder="Текст">
