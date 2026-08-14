@@ -190,17 +190,18 @@
     </div>
     <div class="cat-image-container">
         <img src="https://sun9-21.userapi.com/s/v1/ig2/XyaPw8r_vtloqPanb2dymD2OXLT-t701BALZ_TTegf0XWqsQvTaw8coQ2attcidfnR38PVtSRy9AE0Kta3S4sb1O.jpg?quality=96&as=32x43,48x64,72x96,108x144,160x213,240x320,360x480,480x640,540x720,640x853,720x960,1080x1440,1200x1600&from=bu&u=2PyyDl-5-LfXwVs3w-bFx0Dlen5wKULA2H4D-C6WHL8&cs=1200x0" alt="кот5">
-   
-    <div class="cat-image-container">
-        <img id="userLink" src="" alt="кот">
     </div>
-	 </div>
     <div class="cat-image-container">
         <img src="https://sun9-88.userapi.com/s/v1/ig2/BXW4YC40ZagC4A1SheuNy2drefCaJIxwTerfiMasqxjtkkQ93jdKpOr0naujDjDyELGREAsUgXROsxVMkn2N8euW.jpg?quality=96&as=32x27,48x40,72x60,108x90,160x133,240x200,360x300,480x400,540x450,640x533,720x600,960x800&from=bu&u=lGOYVzj0WrDxZA2bf_ggCUjay3f5aYFbJEJGX1jfppI&cs=960x0" alt="кот">
     </div>
     <div class="cat-image-container">
         <img src="" alt="кот">
     </div>
+    <div class="cat-image-container">
+        <img id="userLink" src="" alt="кот">
+    </div>
+	 
+    
     <h1>ты долистал до конца!!! :3</h1>
     <a href="https://youtu.be/JVilaNmHPLY?si=pMp9tJG88p88_8Fo&t=21">
         <div class="jumping-cat-container">
@@ -346,7 +347,7 @@
         const scrollY = window.scrollY;
         const windowHeight = window.innerHeight;
         const documentHeight = document.documentElement.scrollHeight;
-        if (scrollY + windowHeight >= documentHeight - 200) {
+        if (scrollY + windowHeight >= documentHeight - 600) {
             addImageContainer();
         }
     }
