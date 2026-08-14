@@ -168,7 +168,7 @@
             to { opacity: 1; }
         }
     </style>
-</head>
+
 <body>
     <h1>КОТЫ</h1>
    
