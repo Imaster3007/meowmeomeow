@@ -348,7 +348,7 @@
         const scrollY = window.scrollY;
         const windowHeight = window.innerHeight;
         const documentHeight = document.documentElement.scrollHeight;
-        if (scrollY + windowHeight >= documentHeight - 1000) {
+        if (scrollY + windowHeight >= documentHeight - 2000) {
             addImageContainer();
         }
     }
