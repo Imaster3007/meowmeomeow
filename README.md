@@ -84,6 +84,8 @@
             justify-content: center;
             align-items: center;
             cursor: pointer;
+	    background-color: #e0e0e0;  
+	    will-change: transform; 
         }
         .cat-image-container img {
             max-width: 100%;
@@ -94,6 +96,8 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             border: 2px solid #ddd;
             object-fit: cover;
+	    image-rendering: auto; 
+	    image-rendering: -webkit-optimize-contrast;
         }
         .background-layer {
             position: fixed;
@@ -168,7 +172,7 @@
             to { opacity: 1; }
         }
     </style>
-
+</head>
 <body>
     <h1>КОТЫ</h1>
    
@@ -197,9 +201,11 @@
     <div class="cat-image-container">
         <img src="" alt="кот">
     </div>
+    <a href="https://imaster3007.github.io/meowmeomeow/"userLink"">
     <div class="cat-image-container">
         <img id="userLink" src="" alt="кот">
     </div>
+    </a>
 	 
     
     
@@ -348,7 +354,7 @@
         const scrollY = window.scrollY;
         const windowHeight = window.innerHeight;
         const documentHeight = document.documentElement.scrollHeight;
-        if (scrollY + windowHeight >= documentHeight - 3000) {
+        if (scrollY + windowHeight >= documentHeight - 600) {
             addImageContainer();
         }
     }
