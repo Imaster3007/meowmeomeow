@@ -172,7 +172,7 @@
             to { opacity: 1; }
         }
     </style>
-</head>
+
 <body>
     <h1>КОТЫ</h1>
    
@@ -201,11 +201,11 @@
     <div class="cat-image-container">
         <img src="" alt="кот">
     </div>
-    <a href="https://imaster3007.github.io/meowmeomeow/"userLink"">
+    
     <div class="cat-image-container">
         <img id="userLink" src="" alt="кот">
     </div>
-    </a>
+    
 	 
     
     
