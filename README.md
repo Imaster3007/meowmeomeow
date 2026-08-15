@@ -124,7 +124,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            cursor: pointer;
+            
             animation: bounce 2s ease-in-out infinite;
         }
         .jumping-cat-container img {
@@ -336,6 +336,8 @@
         const img = document.createElement('img');
         img.src = `cat_imgg/${fileName}`;
         img.alt = `кот ${fileName}`;
+	img.loading = 'lazy';     
+	img.decoding = 'async'; 
         img.onload = function() {
             container.appendChild(img);
             wrapper.appendChild(container);
