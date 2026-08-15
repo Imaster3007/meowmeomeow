@@ -354,9 +354,9 @@
         const scrollY = window.scrollY;
         const windowHeight = window.innerHeight;
         const documentHeight = document.documentElement.scrollHeight;
-        if (scrollY + windowHeight >= documentHeight - 4000) {
-            addImageContainer();
-        }
+        
+        addImageContainer();
+        
     }
 
     fetch(LIST_URL)
