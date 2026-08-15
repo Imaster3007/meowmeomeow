@@ -83,7 +83,6 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            cursor: pointer;
 	    background-color: #e0e0e0;  
 	    will-change: transform; 
         }
@@ -96,7 +95,6 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             border: 2px solid #ddd;
             object-fit: cover;
-	    image-rendering: auto; 
 	    image-rendering: -webkit-optimize-contrast;
         }
         .background-layer {
