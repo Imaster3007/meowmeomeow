@@ -334,8 +334,7 @@
         const img = document.createElement('img');
         img.src = `cat_imgg/${fileName}`;
         img.alt = `кот ${fileName}`;
-	img.loading = 'lazy';     
-	img.decoding = 'async'; 
+	
         img.onload = function() {
             container.appendChild(img);
             wrapper.appendChild(container);
@@ -354,7 +353,7 @@
         const scrollY = window.scrollY;
         const windowHeight = window.innerHeight;
         const documentHeight = document.documentElement.scrollHeight;
-        if (scrollY + windowHeight >= documentHeight - 2000) {
+        if (scrollY + windowHeight >= documentHeight - 3000) {
             addImageContainer();
         }
     }
