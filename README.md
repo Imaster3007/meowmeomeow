@@ -95,7 +95,7 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             border: 2px solid #ddd;
             object-fit: cover;
-	    image-rendering: -webkit-optimize-contrast;
+	  
         }
         .background-layer {
             position: fixed;
